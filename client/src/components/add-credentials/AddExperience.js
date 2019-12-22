@@ -119,7 +119,7 @@ export class AddExperience extends Component {
                   value={this.state.description}
                   onChange={this.handleChange}
                   error={errors.description}
-                  info="Tell us about the the position"
+                  info="Tell us about the  position"
                 />
                 <input
                   type="submit"
