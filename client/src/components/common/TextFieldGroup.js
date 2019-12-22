@@ -6,7 +6,6 @@ function TextFieldGroup({
   placeholder,
   value,
   onChange,
-  label,
   error,
   info,
   type,
