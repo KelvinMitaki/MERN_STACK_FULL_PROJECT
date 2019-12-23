@@ -4,6 +4,8 @@ import { connect } from "react-redux";
 import Spinner from "../common/Spinner";
 import { Link } from "react-router-dom";
 import ProfileActions from "./ProfileActions";
+import Experience from "./Experience";
+import Education from "./Education";
 
 export class Dashboard extends Component {
   componentDidMount() {
@@ -29,7 +31,8 @@ export class Dashboard extends Component {
               <Link to={`/profile/${profile.handle}`}>{user.name} </Link>
             </p>
             <ProfileActions />
-            {/* TODO: exp and edu */}
+            <Experience experience={profile.experience} />
+            <Education education={profile.education} />
             <div style={{ marginBottom: "60px" }}>
               <button
                 onClick={this.handleDeleteClick}
