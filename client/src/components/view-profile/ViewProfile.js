@@ -14,6 +14,11 @@ export class ViewProfile extends Component {
       this.props.getProfileByHandle(this.props.match.params.handle);
     }
   }
+  UNSAFE_componentWillReceiveProps(nextProps) {
+    if (nextProps.profile.profile === null && this.props.profile.loading) {
+      this.props.history.push("/not-found");
+    }
+  }
   render() {
     const { profile, loading } = this.props.profile;
     let profileContent;
@@ -36,7 +41,9 @@ export class ViewProfile extends Component {
             experience={profile.experience}
             education={profile.education}
           />
-          <ProfileGithub />
+          {profile.githubusername ? (
+            <ProfileGithub githubusername={profile.githubusername} />
+          ) : null}
         </div>
       );
     }
