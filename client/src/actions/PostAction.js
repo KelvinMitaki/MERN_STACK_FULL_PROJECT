@@ -4,7 +4,8 @@ import {
   GET_POST,
   ADD_POST,
   POST_LOADING,
-  GET_POSTS
+  GET_POSTS,
+  DELETE_POST
 } from "./types";
 
 //add a post
@@ -49,4 +50,52 @@ export const setPostLoading = () => {
   return {
     type: POST_LOADING
   };
+};
+
+//delete post
+export const deletePost = id => dispatch => {
+  axios
+    .delete(`/api/posts/${id}`)
+    .then(res => {
+      dispatch({
+        type: DELETE_POST,
+        payload: id
+      });
+    })
+    .catch(err => {
+      dispatch({
+        type: GET_ERRORS,
+        payload: err.response.data
+      });
+    });
+};
+
+//add like to a post
+export const addLike = id => dispatch => {
+  axios
+    .post(`/api/posts/like/${id}`)
+    .then(res => {
+      dispatch(getPosts());
+    })
+    .catch(err => {
+      dispatch({
+        type: GET_ERRORS,
+        payload: err.response.data
+      });
+    });
+};
+
+//remove like from a post
+export const removeLike = id => dispatch => {
+  axios
+    .post(`/api/posts/unlike/${id}`)
+    .then(res => {
+      dispatch(getPosts());
+    })
+    .catch(err => {
+      dispatch({
+        type: GET_ERRORS,
+        payload: err.response.data
+      });
+    });
 };
