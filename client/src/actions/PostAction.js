@@ -99,3 +99,40 @@ export const removeLike = id => dispatch => {
       });
     });
 };
+
+//get a single post
+export const getPost = id => dispatch => {
+  dispatch(setPostLoading());
+  axios
+    .get(`/api/posts/${id}`)
+    .then(res => {
+      dispatch({
+        type: GET_POST,
+        payload: res.data
+      });
+    })
+    .catch(err => {
+      dispatch({
+        type: GET_POST,
+        payload: null
+      });
+    });
+};
+
+//add a comment to a post
+export const addComment = (postID, newComment) => dispatch => {
+  axios
+    .post(`/api/posts/comment/${postID}`, newComment)
+    .then(res => {
+      dispatch({
+        type: GET_POST,
+        payload: res.data
+      });
+    })
+    .catch(err => {
+      dispatch({
+        type: GET_POST,
+        payload: null
+      });
+    });
+};
