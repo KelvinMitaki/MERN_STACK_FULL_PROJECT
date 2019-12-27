@@ -3,9 +3,6 @@ import { getCurrentProfile, deleteAccount } from "../../actions/profileAction";
 import { connect } from "react-redux";
 import Spinner from "../common/Spinner";
 import { Link } from "react-router-dom";
-import ProfileActions from "./ProfileActions";
-import Experience from "./Experience";
-import Education from "./Education";
 
 export class Dashboard extends Component {
   componentDidMount() {
