@@ -52,14 +52,26 @@ export class Dashboard extends Component {
             <Link to="/create-profile" className="btn btn-lg btn-info">
               Create Profile
             </Link>
+            {<span>{<Experience /> && <Education />}</span> ? (
+              <span>
+                {<Experience />}
+                {<Education />}
+              </span>
+            ) : null}
           </div>
         );
       }
     }
     return (
       <div className="dashboard">
-        <h1 className="display">Dashboard</h1>
-        {dashboardContent}
+        <div className="container">
+          <div className="row">
+            <div className="col-md-12">
+              <h1 className="display">Dashboard</h1>
+              {dashboardContent}
+            </div>
+          </div>
+        </div>
       </div>
     );
   }
