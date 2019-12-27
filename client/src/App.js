@@ -20,9 +20,9 @@ import AddExperience from "./components/add-credentials/AddExperience";
 import AddEducation from "./components/add-credentials/AddEducation";
 import Profiles from "./components/profiles/Profiles";
 import ViewProfile from "./components/view-profile/ViewProfile";
-import NotFound from "./components/not-found/NotFound";
 import Posts from "./components/posts/Posts";
 import Post from "./components/post/Post";
+import Condition from "./components/not-found/Condition";
 
 //check for token
 if (localStorage.jwtToken) {
@@ -90,7 +90,7 @@ function App() {
 
               <PrivateRoutes exact path="/post/:id" component={Post} />
 
-              <Route component={NotFound} />
+              <Route component={Condition} />
             </Switch>
           </div>
           <Footer />
