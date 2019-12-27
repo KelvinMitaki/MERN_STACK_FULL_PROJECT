@@ -42,10 +42,11 @@ router.post(
 
     const newPost = new Post({
       text: req.body.text,
-      name: req.body.name,
+      name: req.user.name,
       avatar: req.body.avatar,
       user: req.user.id
     });
+
     //save post
     newPost.save().then(post => res.json(post));
   }
@@ -139,10 +140,11 @@ router.post(
       .then(post => {
         const newComment = {
           text: req.body.text,
-          name: req.body.name,
+          name: req.user.name,
           avatar: req.body.avatar,
           user: req.user.id
         };
+
         //add comment to comments array
         post.comments.unshift(newComment);
 

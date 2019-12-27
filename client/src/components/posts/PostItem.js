@@ -26,7 +26,6 @@ export class PostItem extends Component {
   };
   render() {
     const { auth, post, showActions } = this.props;
-    const { user } = this.props.auth;
 
     return (
       <div className="card card-body mb-3">
@@ -39,7 +38,7 @@ export class PostItem extends Component {
             />
 
             <br />
-            <p className="text-center">{user.name}</p>
+            <p className="text-center">{post.name}</p>
           </div>
           <div className="col-md-10">
             <p className="lead">{post.text}</p>

@@ -1,0 +1,130 @@
+Date : 2019-12-27 22:34:41
+Directory : c:\Users\Hp\Desktop\MERN_STACK\MERN-STACK-MAIN-PROJECT
+Total : 77 files,  4093 codes, 142 comments, 410 blanks, all 4645 lines
+
+Languages
++------------+------------+------------+------------+------------+------------+
+| language   | files      | code       | comment    | blank      | total      |
++------------+------------+------------+------------+------------+------------+
+| JavaScript |         70 |      3,856 |        138 |        361 |      4,355 |
+| JSON       |          3 |        103 |          0 |          3 |        106 |
+| CSS        |          2 |         50 |          0 |         10 |         60 |
+| HTML       |          1 |         47 |          4 |          4 |         55 |
+| Markdown   |          1 |         37 |          0 |         32 |         69 |
++------------+------------+------------+------------+------------+------------+
+
+Directories
++---------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| path                                                                                                          | files      | code       | comment    | blank      | total      |
++---------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| .                                                                                                             |         77 |      4,093 |        142 |        410 |      4,645 |
+| Models                                                                                                        |          3 |        194 |          0 |          9 |        203 |
+| client                                                                                                        |         59 |      3,164 |         95 |        301 |      3,560 |
+| client\public                                                                                                 |          2 |         72 |          4 |          5 |         81 |
+| client\src                                                                                                    |         55 |      3,011 |         91 |        263 |      3,365 |
+| client\src\actions                                                                                            |          4 |        363 |         32 |         31 |        426 |
+| client\src\components                                                                                         |         36 |      2,249 |         12 |        167 |      2,428 |
+| client\src\components\add-credentials                                                                         |          2 |        284 |          0 |          6 |        290 |
+| client\src\components\auth                                                                                    |          2 |        176 |          0 |         11 |        187 |
+| client\src\components\common                                                                                  |          6 |        142 |          0 |         18 |        160 |
+| client\src\components\createprofile                                                                           |          1 |        228 |          1 |         12 |        241 |
+| client\src\components\dashboard                                                                               |          4 |        201 |          2 |         13 |        216 |
+| client\src\components\edit-profile                                                                            |          1 |        276 |          4 |         16 |        296 |
+| client\src\components\layout                                                                                  |          3 |        140 |          0 |         15 |        155 |
+| client\src\components\not-found                                                                               |          2 |         21 |          0 |          6 |         27 |
+| client\src\components\post                                                                                    |          4 |        167 |          0 |         19 |        186 |
+| client\src\components\posts                                                                                   |          4 |        207 |          0 |         23 |        230 |
+| client\src\components\profiles                                                                                |          2 |         90 |          0 |          7 |         97 |
+| client\src\components\view-profile                                                                            |          5 |        317 |          5 |         21 |        343 |
+| client\src\reducers                                                                                           |          5 |        125 |          0 |         12 |        137 |
+| client\src\utils                                                                                              |          1 |          9 |          2 |          3 |         14 |
+| client\src\validation                                                                                         |          1 |          9 |          0 |          2 |         11 |
+| config                                                                                                        |          3 |         31 |          0 |          5 |         36 |
+| routes                                                                                                        |          3 |        452 |         40 |         52 |        544 |
+| routes\api                                                                                                    |          3 |        452 |         40 |         52 |        544 |
+| validation                                                                                                    |          7 |        185 |          0 |         34 |        219 |
++---------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+
+Files
++---------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| filename                                                                                                      | language   | code       | comment    | blank      | total      |
++---------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| c:\Users\Hp\Desktop\MERN_STACK\MERN-STACK-MAIN-PROJECT\Models\Post.js                                         | JavaScript |         53 |          0 |          3 |         56 |
+| c:\Users\Hp\Desktop\MERN_STACK\MERN-STACK-MAIN-PROJECT\Models\Profile.js                                      | JavaScript |        117 |          0 |          3 |        120 |
+| c:\Users\Hp\Desktop\MERN_STACK\MERN-STACK-MAIN-PROJECT\Models\User.js                                         | JavaScript |         24 |          0 |          3 |         27 |
+| c:\Users\Hp\Desktop\MERN_STACK\MERN-STACK-MAIN-PROJECT\client\README.md                                       | Markdown   |         37 |          0 |         32 |         69 |
+| c:\Users\Hp\Desktop\MERN_STACK\MERN-STACK-MAIN-PROJECT\client\package.json                                    | JSON       |         44 |          0 |          1 |         45 |
+| c:\Users\Hp\Desktop\MERN_STACK\MERN-STACK-MAIN-PROJECT\client\public\index.html                               | HTML       |         47 |          4 |          4 |         55 |
+| c:\Users\Hp\Desktop\MERN_STACK\MERN-STACK-MAIN-PROJECT\client\public\manifest.json                            | JSON       |         25 |          0 |          1 |         26 |
+| c:\Users\Hp\Desktop\MERN_STACK\MERN-STACK-MAIN-PROJECT\client\src\App.css                                     | CSS        |         38 |          0 |          8 |         46 |
+| c:\Users\Hp\Desktop\MERN_STACK\MERN-STACK-MAIN-PROJECT\client\src\App.js                                      | JavaScript |         82 |          7 |         15 |        104 |
+| c:\Users\Hp\Desktop\MERN_STACK\MERN-STACK-MAIN-PROJECT\client\src\App.test.js                                 | JavaScript |          8 |          0 |          2 |         10 |
+| c:\Users\Hp\Desktop\MERN_STACK\MERN-STACK-MAIN-PROJECT\client\src\actions\PostAction.js                       | JavaScript |        146 |         10 |         11 |        167 |
+| c:\Users\Hp\Desktop\MERN_STACK\MERN-STACK-MAIN-PROJECT\client\src\actions\authActions.js                      | JavaScript |         43 |         11 |          8 |         62 |
+| c:\Users\Hp\Desktop\MERN_STACK\MERN-STACK-MAIN-PROJECT\client\src\actions\profileAction.js                    | JavaScript |        161 |         11 |         11 |        183 |
+| c:\Users\Hp\Desktop\MERN_STACK\MERN-STACK-MAIN-PROJECT\client\src\actions\types.js                            | JavaScript |         13 |          0 |          1 |         14 |
+| c:\Users\Hp\Desktop\MERN_STACK\MERN-STACK-MAIN-PROJECT\client\src\components\add-credentials\AddEducation.js  | JavaScript |        142 |          0 |          3 |        145 |
+| c:\Users\Hp\Desktop\MERN_STACK\MERN-STACK-MAIN-PROJECT\client\src\components\add-credentials\AddExperience.js | JavaScript |        142 |          0 |          3 |        145 |
+| c:\Users\Hp\Desktop\MERN_STACK\MERN-STACK-MAIN-PROJECT\client\src\components\auth\Login.js                    | JavaScript |         79 |          0 |          5 |         84 |
+| c:\Users\Hp\Desktop\MERN_STACK\MERN-STACK-MAIN-PROJECT\client\src\components\auth\Register.js                 | JavaScript |         97 |          0 |          6 |        103 |
+| c:\Users\Hp\Desktop\MERN_STACK\MERN-STACK-MAIN-PROJECT\client\src\components\common\InputGroup.js             | JavaScript |         25 |          0 |          3 |         28 |
+| c:\Users\Hp\Desktop\MERN_STACK\MERN-STACK-MAIN-PROJECT\client\src\components\common\PrivateRoutes.js          | JavaScript |         19 |          0 |          3 |         22 |
+| c:\Users\Hp\Desktop\MERN_STACK\MERN-STACK-MAIN-PROJECT\client\src\components\common\SelectListGroup.js        | JavaScript |         26 |          0 |          3 |         29 |
+| c:\Users\Hp\Desktop\MERN_STACK\MERN-STACK-MAIN-PROJECT\client\src\components\common\Spinner.js                | JavaScript |         14 |          0 |          3 |         17 |
+| c:\Users\Hp\Desktop\MERN_STACK\MERN-STACK-MAIN-PROJECT\client\src\components\common\TextAreaFieldGroup.js     | JavaScript |         27 |          0 |          3 |         30 |
+| c:\Users\Hp\Desktop\MERN_STACK\MERN-STACK-MAIN-PROJECT\client\src\components\common\TextFieldGroup.js         | JavaScript |         31 |          0 |          3 |         34 |
+| c:\Users\Hp\Desktop\MERN_STACK\MERN-STACK-MAIN-PROJECT\client\src\components\createprofile\CreateProfile.js   | JavaScript |        228 |          1 |         12 |        241 |
+| c:\Users\Hp\Desktop\MERN_STACK\MERN-STACK-MAIN-PROJECT\client\src\components\dashboard\Dashboard.js           | JavaScript |         81 |          2 |          4 |         87 |
+| c:\Users\Hp\Desktop\MERN_STACK\MERN-STACK-MAIN-PROJECT\client\src\components\dashboard\Education.js           | JavaScript |         50 |          0 |          3 |         53 |
+| c:\Users\Hp\Desktop\MERN_STACK\MERN-STACK-MAIN-PROJECT\client\src\components\dashboard\Experience.js          | JavaScript |         50 |          0 |          3 |         53 |
+| c:\Users\Hp\Desktop\MERN_STACK\MERN-STACK-MAIN-PROJECT\client\src\components\dashboard\ProfileActions.js      | JavaScript |         20 |          0 |          3 |         23 |
+| c:\Users\Hp\Desktop\MERN_STACK\MERN-STACK-MAIN-PROJECT\client\src\components\edit-profile\EditProfile.js      | JavaScript |        276 |          4 |         16 |        296 |
+| c:\Users\Hp\Desktop\MERN_STACK\MERN-STACK-MAIN-PROJECT\client\src\components\layout\Footer.js                 | JavaScript |         13 |          0 |          3 |         16 |
+| c:\Users\Hp\Desktop\MERN_STACK\MERN-STACK-MAIN-PROJECT\client\src\components\layout\Landing.js                | JavaScript |         38 |          0 |          5 |         43 |
+| c:\Users\Hp\Desktop\MERN_STACK\MERN-STACK-MAIN-PROJECT\client\src\components\layout\Navbar.js                 | JavaScript |         89 |          0 |          7 |         96 |
+| c:\Users\Hp\Desktop\MERN_STACK\MERN-STACK-MAIN-PROJECT\client\src\components\not-found\NotFound.js            | JavaScript |          7 |          0 |          3 |         10 |
+| c:\Users\Hp\Desktop\MERN_STACK\MERN-STACK-MAIN-PROJECT\client\src\components\not-found\RedirectNotFound.js    | JavaScript |         14 |          0 |          3 |         17 |
+| c:\Users\Hp\Desktop\MERN_STACK\MERN-STACK-MAIN-PROJECT\client\src\components\post\CommentFeed.js              | JavaScript |         11 |          0 |          3 |         14 |
+| c:\Users\Hp\Desktop\MERN_STACK\MERN-STACK-MAIN-PROJECT\client\src\components\post\CommentForm.js              | JavaScript |         68 |          0 |          5 |         73 |
+| c:\Users\Hp\Desktop\MERN_STACK\MERN-STACK-MAIN-PROJECT\client\src\components\post\CommentItem.js              | JavaScript |         42 |          0 |          6 |         48 |
+| c:\Users\Hp\Desktop\MERN_STACK\MERN-STACK-MAIN-PROJECT\client\src\components\post\Post.js                     | JavaScript |         46 |          0 |          5 |         51 |
+| c:\Users\Hp\Desktop\MERN_STACK\MERN-STACK-MAIN-PROJECT\client\src\components\posts\PostFeed.js                | JavaScript |         15 |          0 |          4 |         19 |
+| c:\Users\Hp\Desktop\MERN_STACK\MERN-STACK-MAIN-PROJECT\client\src\components\posts\PostForm.js                | JavaScript |         67 |          0 |          5 |         72 |
+| c:\Users\Hp\Desktop\MERN_STACK\MERN-STACK-MAIN-PROJECT\client\src\components\posts\PostItem.js                | JavaScript |         89 |          0 |          9 |         98 |
+| c:\Users\Hp\Desktop\MERN_STACK\MERN-STACK-MAIN-PROJECT\client\src\components\posts\Posts.js                   | JavaScript |         36 |          0 |          5 |         41 |
+| c:\Users\Hp\Desktop\MERN_STACK\MERN-STACK-MAIN-PROJECT\client\src\components\profiles\ProfileItem.js          | JavaScript |         46 |          0 |          5 |         51 |
+| c:\Users\Hp\Desktop\MERN_STACK\MERN-STACK-MAIN-PROJECT\client\src\components\profiles\Profiles.js             | JavaScript |         44 |          0 |          2 |         46 |
+| c:\Users\Hp\Desktop\MERN_STACK\MERN-STACK-MAIN-PROJECT\client\src\components\view-profile\ProfileAbout.js     | JavaScript |         37 |          0 |          4 |         41 |
+| c:\Users\Hp\Desktop\MERN_STACK\MERN-STACK-MAIN-PROJECT\client\src\components\view-profile\ProfileCreds.js     | JavaScript |         90 |          0 |          4 |         94 |
+| c:\Users\Hp\Desktop\MERN_STACK\MERN-STACK-MAIN-PROJECT\client\src\components\view-profile\ProfileGithub.js    | JavaScript |         65 |          0 |          6 |         71 |
+| c:\Users\Hp\Desktop\MERN_STACK\MERN-STACK-MAIN-PROJECT\client\src\components\view-profile\ProfileHeader.js    | JavaScript |         67 |          0 |          3 |         70 |
+| c:\Users\Hp\Desktop\MERN_STACK\MERN-STACK-MAIN-PROJECT\client\src\components\view-profile\ViewProfile.js      | JavaScript |         58 |          5 |          4 |         67 |
+| c:\Users\Hp\Desktop\MERN_STACK\MERN-STACK-MAIN-PROJECT\client\src\index.css                                   | CSS        |         12 |          0 |          2 |         14 |
+| c:\Users\Hp\Desktop\MERN_STACK\MERN-STACK-MAIN-PROJECT\client\src\index.js                                    | JavaScript |          7 |          3 |          3 |         13 |
+| c:\Users\Hp\Desktop\MERN_STACK\MERN-STACK-MAIN-PROJECT\client\src\reducers\PostReducer.js                     | JavaScript |         45 |          0 |          2 |         47 |
+| c:\Users\Hp\Desktop\MERN_STACK\MERN-STACK-MAIN-PROJECT\client\src\reducers\authReducer.js                     | JavaScript |         18 |          0 |          3 |         21 |
+| c:\Users\Hp\Desktop\MERN_STACK\MERN-STACK-MAIN-PROJECT\client\src\reducers\errorReducer.js                    | JavaScript |         12 |          0 |          2 |         14 |
+| c:\Users\Hp\Desktop\MERN_STACK\MERN-STACK-MAIN-PROJECT\client\src\reducers\index.js                           | JavaScript |         11 |          0 |          2 |         13 |
+| c:\Users\Hp\Desktop\MERN_STACK\MERN-STACK-MAIN-PROJECT\client\src\reducers\profileReducer.js                  | JavaScript |         39 |          0 |          3 |         42 |
+| c:\Users\Hp\Desktop\MERN_STACK\MERN-STACK-MAIN-PROJECT\client\src\serviceWorker.js                            | JavaScript |         94 |         31 |         13 |        138 |
+| c:\Users\Hp\Desktop\MERN_STACK\MERN-STACK-MAIN-PROJECT\client\src\setupTests.js                               | JavaScript |          1 |          4 |          1 |          6 |
+| c:\Users\Hp\Desktop\MERN_STACK\MERN-STACK-MAIN-PROJECT\client\src\store.js                                    | JavaScript |         14 |          0 |          4 |         18 |
+| c:\Users\Hp\Desktop\MERN_STACK\MERN-STACK-MAIN-PROJECT\client\src\utils\setAuthToken.js                       | JavaScript |          9 |          2 |          3 |         14 |
+| c:\Users\Hp\Desktop\MERN_STACK\MERN-STACK-MAIN-PROJECT\client\src\validation\is-empty.js                      | JavaScript |          9 |          0 |          2 |         11 |
+| c:\Users\Hp\Desktop\MERN_STACK\MERN-STACK-MAIN-PROJECT\config\keys.js                                         | JavaScript |          5 |          0 |          1 |          6 |
+| c:\Users\Hp\Desktop\MERN_STACK\MERN-STACK-MAIN-PROJECT\config\keys_prod.js                                    | JavaScript |          4 |          0 |          1 |          5 |
+| c:\Users\Hp\Desktop\MERN_STACK\MERN-STACK-MAIN-PROJECT\config\passport.js                                     | JavaScript |         22 |          0 |          3 |         25 |
+| c:\Users\Hp\Desktop\MERN_STACK\MERN-STACK-MAIN-PROJECT\package.json                                           | JSON       |         34 |          0 |          1 |         35 |
+| c:\Users\Hp\Desktop\MERN_STACK\MERN-STACK-MAIN-PROJECT\routes\api\posts.js                                    | JavaScript |        153 |         18 |         20 |        191 |
+| c:\Users\Hp\Desktop\MERN_STACK\MERN-STACK-MAIN-PROJECT\routes\api\profile.js                                  | JavaScript |        207 |         21 |         22 |        250 |
+| c:\Users\Hp\Desktop\MERN_STACK\MERN-STACK-MAIN-PROJECT\routes\api\users.js                                    | JavaScript |         92 |          1 |         10 |        103 |
+| c:\Users\Hp\Desktop\MERN_STACK\MERN-STACK-MAIN-PROJECT\server.js                                              | JavaScript |         33 |          7 |          8 |         48 |
+| c:\Users\Hp\Desktop\MERN_STACK\MERN-STACK-MAIN-PROJECT\validation\education.js                                | JavaScript |         25 |          0 |          5 |         30 |
+| c:\Users\Hp\Desktop\MERN_STACK\MERN-STACK-MAIN-PROJECT\validation\experience.js                               | JavaScript |         21 |          0 |          5 |         26 |
+| c:\Users\Hp\Desktop\MERN_STACK\MERN-STACK-MAIN-PROJECT\validation\is-empty.js                                 | JavaScript |          9 |          0 |          2 |         11 |
+| c:\Users\Hp\Desktop\MERN_STACK\MERN-STACK-MAIN-PROJECT\validation\login.js                                    | JavaScript |         20 |          0 |          6 |         26 |
+| c:\Users\Hp\Desktop\MERN_STACK\MERN-STACK-MAIN-PROJECT\validation\post.js                                     | JavaScript |         16 |          0 |          5 |         21 |
+| c:\Users\Hp\Desktop\MERN_STACK\MERN-STACK-MAIN-PROJECT\validation\profile.js                                  | JavaScript |         54 |          0 |          7 |         61 |
+| c:\Users\Hp\Desktop\MERN_STACK\MERN-STACK-MAIN-PROJECT\validation\register.js                                 | JavaScript |         40 |          0 |          4 |         44 |
+| Total                                                                                                         |            |      4,093 |        142 |        410 |      4,645 |
++---------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
