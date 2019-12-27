@@ -37,7 +37,3 @@ img {
 .form-control::placeholder {
   color: #bbb !important;
 }
-.push {
-  height: 500px;
-  background-color: black;
-}

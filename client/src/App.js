@@ -50,10 +50,8 @@ function App() {
       <Router>
         <div className="App">
           <Navbar />
-          <div className="push">
-            {" "}
-            <Route exact path="/" component={Landing} />
-          </div>
+
+          <Route exact path="/" component={Landing} />
 
           <div className="container clear-top">
             <Switch>
