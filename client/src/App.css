@@ -37,6 +37,3 @@ img {
 .form-control::placeholder {
   color: #bbb !important;
 }
-.overflow {
-  width: 100%;
-}
