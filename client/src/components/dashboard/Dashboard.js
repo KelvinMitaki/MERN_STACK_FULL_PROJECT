@@ -30,9 +30,44 @@ export class Dashboard extends Component {
               Welcome{" "}
               <Link to={`/profile/${profile.handle}`}>{user.name} </Link>
             </p>
-            <ProfileActions />
-            <Experience experience={profile.experience} />
-            <Education education={profile.education} />
+            <div className="btn-group mb-4" role="group">
+              <Link to="/edit-profile" className="btn btn-light">
+                <i className="fas fa-user-circle text-info mr-1"></i> Edit
+                Profile
+              </Link>
+              <Link to="/add-experience" className="btn btn-light">
+                <i className="fab fa-black-tie text-info mr-1"></i>
+                Add Experience
+              </Link>
+              <Link to="/add-education" className="btn btn-light">
+                <i className="fas fa-graduation-cap text-info mr-1"></i>
+                Add Education
+              </Link>
+            </div>
+            <h4 className="mb-4">Experience Credentials</h4>
+            <table className="table">
+              <thead>
+                <tr>
+                  <th>Company</th>
+                  <th>Title</th>
+                  <th>Years</th>
+                  <th></th>
+                </tr>
+              </thead>
+              <tbody>{experience}</tbody>
+            </table>
+            <h4 className="mb-4">Education Credentials</h4>
+            <table className="table">
+              <thead>
+                <tr>
+                  <th>School</th>
+                  <th>Degree</th>
+                  <th>Years</th>
+                  <th></th>
+                </tr>
+              </thead>
+              <tbody>{education}</tbody>
+            </table>
             <div style={{ marginBottom: "60px" }}>
               <button
                 onClick={this.handleDeleteClick}
