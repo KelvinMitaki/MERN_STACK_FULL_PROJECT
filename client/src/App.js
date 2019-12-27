@@ -51,50 +51,45 @@ function App() {
         <div className="App">
           <Navbar />
           <Route exact path="/" component={Landing} />
-          <div className="container">
-            <Route exact path="/register" component={Register} />
-            <Route exact path="/login" component={Login} />
-            <Route exact path="/profiles" component={Profiles} />
-            <Route exact path="/profile/:handle" component={ViewProfile} />
+          <div className="container clear-top">
+            <Switch>
+              <Route exact path="/register" component={Register} />
+              <Route exact path="/login" component={Login} />
+              <Route exact path="/profiles" component={Profiles} />
+              <Route exact path="/profile/:handle" component={ViewProfile} />
 
-            <Switch>
               <PrivateRoutes exact path="/dashboard" component={Dashboard} />
-            </Switch>
-            <Switch>
+
               <PrivateRoutes
                 exact
                 path="/create-profile"
                 component={CreateProfile}
               />
-            </Switch>
-            <Switch>
+
               <PrivateRoutes
                 exact
                 path="/edit-profile"
                 component={EditProfile}
               />
-            </Switch>
-            <Switch>
+
               <PrivateRoutes
                 exact
                 path="/add-experience"
                 component={AddExperience}
               />
-            </Switch>
-            <Switch>
+
               <PrivateRoutes
                 exact
                 path="/add-education"
                 component={AddEducation}
               />
-            </Switch>
-            <Switch>
+
               <PrivateRoutes exact path="/feed" component={Posts} />
-            </Switch>
-            <Switch>
+
               <PrivateRoutes exact path="/post/:id" component={Post} />
+
+              <Route component={NotFound} />
             </Switch>
-            <Route exact path="/not-found" component={NotFound} />
           </div>
           <Footer />
         </div>
