@@ -1,5 +1,5 @@
-module.exports = {
-  MongoURI:
-    "mongodb+srv://MERN-STACK-MAIN-PROJECT:kevinmitaki@cluster0-0pyuz.mongodb.net/test?retryWrites=true&w=majority",
-  secretOrKey: "secretKey"
-};
+if (process.env.NODE_ENV === "production") {
+  module.exports = require("./keys_prod");
+} else {
+  module.exports = require("./keys_dev");
+}
