@@ -3,6 +3,9 @@ import { getCurrentProfile, deleteAccount } from "../../actions/profileAction";
 import { connect } from "react-redux";
 import Spinner from "../common/Spinner";
 import { Link } from "react-router-dom";
+import { deleteExperience } from "../../actions/profileAction";
+import Moment from "react-moment";
+import { deleteEducation } from "../../actions/profileAction";
 
 export class Dashboard extends Component {
   componentDidMount() {
@@ -11,7 +14,57 @@ export class Dashboard extends Component {
   handleDeleteClick = e => {
     this.props.deleteAccount();
   };
+  handleClick = id => {
+    this.props.deleteExperience(id);
+  };
+  handleClickEdu = id => {
+    this.props.deleteEducation(id);
+  };
   render() {
+    const education = this.props.education.map(edu => (
+      <tr key={edu._id}>
+        <td>{edu.school}</td>
+        <td>{edu.degree}</td>
+        <td>
+          <Moment format="YYYY/MM/DD">{edu.from}</Moment> -{" "}
+          {edu.to === null ? (
+            "Now"
+          ) : (
+            <Moment format="YYYY/MM/DD">{edu.to}</Moment>
+          )}
+        </td>
+        <td>
+          <button
+            onClick={() => this.handleClickEdu(edu._id)}
+            className="btn btn-danger"
+          >
+            Delete
+          </button>
+        </td>
+      </tr>
+    ));
+    const experience = this.props.experience.map(exp => (
+      <tr key={exp._id}>
+        <td>{exp.company}</td>
+        <td>{exp.title}</td>
+        <td>
+          <Moment format="YYYY/MM/DD">{exp.from}</Moment> -{" "}
+          {exp.to === null ? (
+            "Now"
+          ) : (
+            <Moment format="YYYY/MM/DD">{exp.to}</Moment>
+          )}
+        </td>
+        <td>
+          <button
+            onClick={() => this.handleClick(exp._id)}
+            className="btn btn-danger"
+          >
+            Delete
+          </button>
+        </td>
+      </tr>
+    ));
     const { user } = this.props.auth;
     const { profile, loading } = this.props.profile;
 
@@ -107,6 +160,9 @@ const mapStateToProps = state => ({
   profile: state.profile
 });
 
-export default connect(mapStateToProps, { getCurrentProfile, deleteAccount })(
-  Dashboard
-);
+export default connect(mapStateToProps, {
+  getCurrentProfile,
+  deleteAccount,
+  deleteExperience,
+  deleteEducation
+})(Dashboard);
