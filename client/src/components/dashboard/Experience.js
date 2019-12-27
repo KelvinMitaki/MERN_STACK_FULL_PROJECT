@@ -31,19 +31,23 @@ export class Experience extends Component {
       </tr>
     ));
     return (
-      <div>
-        <h4 className="mb-4">Experience Credentials</h4>
-        <table className="table">
-          <thead>
-            <tr>
-              <th>Company</th>
-              <th>Title</th>
-              <th>Years</th>
-              <th></th>
-            </tr>
-          </thead>
-          <tbody>{experience}</tbody>
-        </table>
+      <div className="container">
+        <div className="row">
+          <div className="col-md-12">
+            <h4 className="mb-4">Experience Credentials</h4>
+            <table className="table">
+              <thead>
+                <tr>
+                  <th>Company</th>
+                  <th>Title</th>
+                  <th>Years</th>
+                  <th></th>
+                </tr>
+              </thead>
+              <tbody>{experience}</tbody>
+            </table>
+          </div>
+        </div>
       </div>
     );
   }
