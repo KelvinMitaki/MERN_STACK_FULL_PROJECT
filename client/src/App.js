@@ -53,7 +53,7 @@ function App() {
 
           <Route exact path="/" component={Landing} />
 
-          <div className="container clear-top">
+          <div>
             <Switch>
               <Route exact path="/register" component={Register} />
               <Route exact path="/login" component={Login} />
