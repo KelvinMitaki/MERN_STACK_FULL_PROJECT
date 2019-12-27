@@ -37,3 +37,9 @@ img {
 .form-control::placeholder {
   color: #bbb !important;
 }
+
+@media (max-width: 768px) {
+  .dashboard {
+    width: 90%;
+  }
+}
