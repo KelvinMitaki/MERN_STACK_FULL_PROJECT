@@ -50,11 +50,11 @@ function App() {
       <Router>
         <div className="App">
           <Navbar />
-          <div className="overflow">
-            <Route exact path="/" component={Landing} />
-          </div>
 
           <div className="container clear-top">
+            <div className="overflow">
+              <Route exact path="/" component={Landing} />
+            </div>
             <Switch>
               <Route exact path="/register" component={Register} />
               <Route exact path="/login" component={Login} />
