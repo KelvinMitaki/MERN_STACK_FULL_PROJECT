@@ -33,7 +33,7 @@ export class Education extends Component {
     return (
       <div>
         <h4 className="mb-4">Education Credentials</h4>
-        <table className="table">
+        <table className="table table-sm">
           <thead>
             <tr>
               <th>School</th>
