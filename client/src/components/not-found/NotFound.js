@@ -1,9 +1,16 @@
-import React from "react";
-import { Redirect } from "react-router-dom";
-import RedirectNotFound from "./RedirectNotFound";
+import React, { Component } from "react";
 
-function NotFound() {
-  return <Redirect to={RedirectNotFound} />;
+export class RedirectNotFound extends Component {
+  render() {
+    return (
+      <div>
+        <div>
+          <h1 className="display-4">Page Not Found</h1>
+          <p>Sorry this page does not exist</p>
+        </div>
+      </div>
+    );
+  }
 }
 
-export default NotFound;
+export default RedirectNotFound;
