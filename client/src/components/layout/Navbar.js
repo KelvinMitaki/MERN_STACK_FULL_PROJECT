@@ -23,14 +23,14 @@ export class Navbar extends Component {
     const authLinks = (
       <ul className="navbar-nav ml-auto">
         <li className="nav-item">
-          <Link className="nav-link" to="/feed">
+          <a className="nav-link" href="/feed">
             Post Feed
-          </Link>
+          </a>
         </li>
         <li className="nav-item">
-          <Link className="nav-link" to="/dashboard">
+          <a className="nav-link" href="/dashboard">
             Dashboard
-          </Link>
+          </a>
         </li>
         <li className="nav-item">
           <a href="/#" onClick={this.handleLogoutClick} className="nav-link">
@@ -49,14 +49,14 @@ export class Navbar extends Component {
     const guestLinks = (
       <ul className="navbar-nav ml-auto">
         <li className="nav-item">
-          <Link className="nav-link" to="/register">
+          <a className="nav-link" href="/register">
             Sign Up
-          </Link>
+          </a>
         </li>
         <li className="nav-item">
-          <Link className="nav-link" to="/login">
+          <a className="nav-link" href="/login">
             Login
-          </Link>
+          </a>
         </li>
       </ul>
     );
@@ -79,10 +79,10 @@ export class Navbar extends Component {
           <div className="collapse navbar-collapse" id="mobile-nav">
             <ul className="navbar-nav mr-auto">
               <li className="nav-item">
-                <Link className="nav-link" to="/profiles">
+                <a className="nav-link" href="/profiles">
                   {" "}
                   Developers
-                </Link>
+                </a>
               </li>
             </ul>
             {isAuthenticated ? authLinks : guestLinks}
